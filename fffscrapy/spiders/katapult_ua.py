@@ -47,5 +47,5 @@ class KatapultUaSpider(scrapy.Spider):
             yield {
                 'date': date,
                 'content': content,
-                'image': json.dumps(image_links)
+                'images': json.dumps(image_links)
             }
