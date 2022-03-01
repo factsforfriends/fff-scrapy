@@ -1,6 +1,5 @@
 import scrapy
 from scrapy.http import HtmlResponse
-import json
 
 
 class KatapultUaSpider(scrapy.Spider):
@@ -47,5 +46,5 @@ class KatapultUaSpider(scrapy.Spider):
             yield {
                 'date': date,
                 'content': content,
-                'images': json.dumps(image_links)
+                'images': image_links
             }
