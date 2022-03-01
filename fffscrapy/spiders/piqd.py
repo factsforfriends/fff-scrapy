@@ -14,7 +14,7 @@ class piqdSpider(scrapy.Spider):
         for url in urls:
             yield scrapy.Request(url, callback=self.parse)
     
-    def parse(self, response):
+    def parse(self, response, **kwargs):
         #
         # Parse all previews
         #
