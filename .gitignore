@@ -1,0 +1,9 @@
+*.json
+*.env
+*.pyc
+build/
+dist/
+*.egg
+*.egg-info
+.vscode
+__pycache__/
