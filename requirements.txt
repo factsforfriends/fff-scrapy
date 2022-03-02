@@ -1,0 +1,3 @@
+botocore
+scrapy>=2.6.1
+slugify
