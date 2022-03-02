@@ -12,7 +12,8 @@ class KatapultUaSpider(scrapy.Spider):
 
     def start_requests(self):
         urls = [
-            self.base_url + '/artikel/liveblog-zur-ukraine'
+            self.base_url + '/artikel/liveblog-zur-ukraine',
+            self.base_url + '/artikel/liveblog-zur-ukraine-geht-weiter'
         ]
         for url in urls:
             yield scrapy.Request(url, callback=self.parse)
