@@ -42,7 +42,7 @@ class KatapultUaSpider(scrapy.Spider):
             images = response.css('figure.figure-image.center img')
             image_links = []
             for image in images:
-                image_links.append(image.attrib['data-srcset'].split(',')[-1].strip().split(' ')[0])
+                image_links.append(image.attrib['data-srcset'].split(',')[1].strip().split(' ')[0])
 
             yield {
                 'date': date,
